@@ -1,5 +1,4 @@
 import { registerPlugin } from '@capacitor/core';
-
 import type { Yodo1MasPlugin } from './definitions';
 
 const Yodo1Mas = registerPlugin<Yodo1MasPlugin>('Yodo1Mas', {

@@ -13,10 +13,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@capacitor/android": "8.0.0",
     "@capacitor/core": "latest",
-    "@yodo1/mas-capacitor": "file:..",
     "@capacitor/ios": "8.0.0",
-    "@capacitor/android": "8.0.0"
+    "@yodo1/mas-capacitor": "file:.."
   },
   "devDependencies": {
     "@capacitor/cli": "latest",

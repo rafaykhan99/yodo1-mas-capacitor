@@ -1,0 +1,17 @@
+# Dev / local
+node_modules/
+.DS_Store
+*.log
+
+# Example app should NOT be published
+example-app/
+
+# Build artifacts you don’t want
+dist/docs.json
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db

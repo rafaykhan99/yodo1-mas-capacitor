@@ -1,26 +1,25 @@
-<!doctype html>
-<html lang="en" dir="ltr" class="hydrated">
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Example Capacitor App</title>
-    <meta
-      name="viewport"
-      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
-    <meta name="format-detection" content="telephone=no" />
+    <title>Yodo1 MAS Capacitor Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
-  <body>
-    <main>
-      <h1>Capacitor Test Plugin Project</h1>
-      <p>
-        This project can be used to test out the functionality of your plugin. Nothing in the
-        <em>example-app/</em> folder will be published to npm when using this template, so you can create away!
-      </p>
-      <label for="echoInput">Echo Text:</label>
-      <input type="text" id="echoInput" name="echoInput" value="Hello World!" />
-      <button onclick="testEcho()">Click Me!</button>
-    </main>
 
-    <script src="./js/example.js" type="module"></script>
+  <body>
+    <h2>Yodo1 MAS Test</h2>
+
+    <div style="margin-bottom: 12px;">
+      Coins: <b id="coins">0</b>
+    </div>
+
+    <button id="btnAppOpen">Show App Open</button>
+    <br /><br />
+    <button id="btnInterstitial">Show Interstitial</button>
+    <br /><br />
+    <button id="btnRewarded">Show Rewarded</button>
+
+    <!-- IMPORTANT: make sure this points to the built JS -->
+    <script type="module" src="./js/example.js"></script>
   </body>
 </html>

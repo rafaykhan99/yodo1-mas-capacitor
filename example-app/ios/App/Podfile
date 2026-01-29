@@ -1,0 +1,29 @@
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/Yodo1Games/MAS-Spec.git'
+
+platform :ios, '15.0'
+use_frameworks! :linkage => :static
+
+install! 'cocoapods', :disable_input_output_paths => true
+
+target 'App' do
+  # --- Capacitor core (manual) ---
+  pod 'Capacitor', :path => '../../node_modules/@capacitor/ios'
+  pod 'CapacitorCordova', :path => '../../node_modules/@capacitor/ios'
+
+  # --- Your plugin (manual) ---
+  # IMPORTANT: update the path below to where the plugin exists in node_modules.
+  # If your package name is @yodo1/mas-capacitor, it will usually be:
+  pod 'Yodo1MasCapacitor', :path => '../../node_modules/@yodo1/mas-capacitor'
+
+  # --- MAS native dependency (optional for testing; your plugin podspec already has this) ---
+  pod 'Yodo1MasFull', '4.17.1'
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |t|
+    t.build_configurations.each do |config|
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '15.0'
+    end
+  end
+end
