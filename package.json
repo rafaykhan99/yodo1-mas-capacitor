@@ -1,5 +1,9 @@
 {
-  "name": "@yodo1/mas-capacitor",
+  "publishConfig": {
+  "access": "public"
+  },
+
+  "name": "@rafaykhan021/mas-capacitor",
   "version": "1.0.0",
   "description": "A Capacitor Plugin for Yodo1 MAS",
   "main": "dist/plugin.cjs.js",
@@ -46,10 +50,10 @@
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
-    "@capacitor/android": "^8.0.0",
-    "@capacitor/core": "^8.0.0",
+    "@capacitor/android": "^7.4.0",
+    "@capacitor/core": "^7.4.0",
     "@capacitor/docgen": "^0.3.1",
-    "@capacitor/ios": "^8.0.0",
+    "@capacitor/ios": "^7.4.0",
     "@ionic/eslint-config": "^0.4.0",
     "@ionic/prettier-config": "^4.0.0",
     "@ionic/swiftlint-config": "^2.0.0",
@@ -62,7 +66,7 @@
     "typescript": "^5.9.3"
   },
   "peerDependencies": {
-    "@capacitor/core": ">=8.0.0"
+    "@capacitor/core": ">=7.0.0 <8.0.0"
   },
   "prettier": "@ionic/prettier-config",
   "swiftlint": "@ionic/swiftlint-config",
