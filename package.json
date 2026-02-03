@@ -4,7 +4,7 @@
   },
 
   "name": "@rafaykhan021/mas-capacitor",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A Capacitor Plugin for Yodo1 MAS",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -75,7 +75,8 @@
   },
   "capacitor": {
     "ios": {
-      "src": "ios"
+      "src": "ios",
+      "podName": "Yodo1MasCapacitor"
     },
     "android": {
       "src": "android"
